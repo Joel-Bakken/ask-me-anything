@@ -1,11 +1,11 @@
 <h1>Welcome to Ask Me Anything!</h1>
 
 <h4>In this area you will find a list of questions being asked by our users</h4>
-<p>Please click on a question to see the answers or click on the 'I've got a question' button below to ask one of your ownf</p>
+<p>Please click on a question to see the answers or click on the 'I've got a question' button below to ask one of your own.</p>
 
 <ul>
   {{#each model.questions as |question|}}
-    {{question-tile question=question}}
+    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
 
