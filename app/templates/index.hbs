@@ -1,0 +1,12 @@
+<h1>Welcome to Ask Me Anything!</h1>
+
+<h4>In this area you will find a list of questions being asked by our users</h4>
+<p>Please click on a question to see the answers or click on the 'I've got a question' button below to ask one of your ownf</p>
+
+<ul>
+  {{#each model.questions as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</ul>
+
+{{new-question saveQuestion2="saveQuestion3"}}

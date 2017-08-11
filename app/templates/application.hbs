@@ -1,5 +1,21 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<nav class ="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">Ask Me Anyhting</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+      <li>{{#link-to 'about'}}About{{/link-to}}</li>
+      <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
+      <li><a href="https://www.linkedin.com">Linkedin</a></li>
+      <li><a href="https://stackoverflow.com">StackOverflow</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    {{outlet}}
+  </div>
+  <div class="col-md-2"></div>
+</div>
