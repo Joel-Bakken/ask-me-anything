@@ -1,9 +1,17 @@
-[ {
-  "asker" : "Joel",
-  "inquiry" : "Why is the sky blue?",
-  "subject" : "Science"
+{ "questions": [ {
+    "asker" : "Joel",
+    "inquiry" : "Why is the sky blue?",
+    "subject" : "Science"
 }, {
-  "asker" : "Kelle (Joel's sister)",
-  "inquiry" : "Why does my brother Joel ask silly questions like, 'Why is the sky blue?'",
-  "subject" : "Social"
-} ]
+    "asker" : "Kelle (Joel's sister)",
+    "inquiry" : "Why does my brother Joel ask silly questions like, 'Why is the sky blue?'",
+    "subject" : "Social"
+} ],
+  "answers": [ {
+    "answerer": "Kelle (Joel's sister)",
+    "content":  "A clear cloudless day-time sky is blue because molecules in the air scatter blue light from the sun more than they scatter red light. When we look towards the sun at sunset, we see red and orange colours because the blue light has been scattered out and away from the line of sight."
+  }, {
+    "answerer": "Joel (Kelle's brother)",
+    "content":  "Brothers can be stupid, annoying, crazy and stuff like that bcoz that is their job! "
+   } ]
+}
