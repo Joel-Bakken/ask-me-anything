@@ -1,0 +1,14 @@
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-image: url(http://www.clker.com/cliparts/O/x/0/m/r/M/question-mark.svg);
+  background-repeat: repeat;
+  background-size: 55%;
+}
+
+.thumbnail {
+  background-color: transparent;
+  border-color: transparent;
+}

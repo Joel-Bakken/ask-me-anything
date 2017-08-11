@@ -13,8 +13,8 @@ export default Ember.Route.extend({
           return question.save();
         });
         this.transitionTo('question', question);
-    }
-    update(question, params) {
+    },
+    updateQuestion(question, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
           question.set(key,params[key]);
