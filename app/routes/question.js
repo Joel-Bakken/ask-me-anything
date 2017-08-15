@@ -14,14 +14,14 @@ export default Ember.Route.extend({
         });
         this.transitionTo('question', question);
     },
-    updateQuestion(question, params) {
+    update(question, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
           question.set(key,params[key]);
         }
       });
       question.save();
-      this.transitionTo('index');
+      this.transitionTo('question', question);
     },
     destroyQuestion(question) {
       var review_deletions = question.get('answers').map(function(answer) {

@@ -1,7 +1,5 @@
 <h2>Here is the question in the subject of {{model.subject}} asked by {{model.asker}}.</h2>
 
-{{update-question question=model update="update"}}
-
-{{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+{{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer" update="update"}}
 
 {{new-answer saveAnswer="saveAnswer" question=model}}
