@@ -24,7 +24,7 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     destroyQuestion(question) {
-      var review_deletions = rental.get('answers').map(function(answer) {
+      var review_deletions = question.get('answers').map(function(answer) {
         return answer.destroyRecord();
       });
       Ember.RSVP.all(review_deletions).then(function() {
